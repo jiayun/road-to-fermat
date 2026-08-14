@@ -1,0 +1,56 @@
+% preamble.tex — 《從高中數學到費馬最後定理》共用前導文件
+% 編譯引擎：xelatex
+
+% ── 中文排版 ──────────────────────────────────────────
+\usepackage{xeCJK}
+\setCJKmainfont[BoldFont={Noto Serif CJK TC SemiBold}]{Noto Serif CJK TC}
+\setCJKsansfont{Noto Sans CJK TC}
+\setCJKmonofont{Noto Sans Mono CJK TC}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+% 這些符號改由 CJK 字型出字（拉丁字型缺字）
+\xeCJKDeclareCharClass{CJK}{"2500 -> "257F, "2113, "2605, "2606, "2713, "25CF, "25CB, "2194, "2192, "2190, "21D0, "21D2, "21D4, "21A6, "27F9, "27FA, "2208}
+
+% ── 數學 ─────────────────────────────────────────────
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{tikz-cd}   % 交換圖（第六、七部）
+
+% ── 定理環境（pandoc fenced div 經 theorems.lua 對應到這裡）──
+% 單章編譯：定理在章內流水編號。全書編譯時改用 book class 並加 [chapter]。
+\theoremstyle{plain}
+\newtheorem{thm}{定理}
+\newtheorem{prop}[thm]{命題}
+\newtheorem{lem}[thm]{引理}
+\newtheorem{cor}[thm]{推論}
+\newtheorem{conj}[thm]{猜想}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{定義}
+\newtheorem{exa}[thm]{例}
+\theoremstyle{remark}
+\newtheorem*{rem}{註}
+\renewcommand{\proofname}{證明}
+
+% ── 全書記號巨集（與 notation.md 同步維護）──────────────
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}                 % 有限體 \F_p
+\newcommand{\Qbar}{\overline{\mathbb{Q}}}
+\newcommand{\OK}{\mathcal{O}_K}             % 整數環
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\GL}{\operatorname{GL}}
+\newcommand{\SL}{\operatorname{SL}}
+\newcommand{\Frob}{\operatorname{Frob}}
+\newcommand{\divides}{\mid}
+\newcommand{\notdivides}{\nmid}
+
+% ── 版面 ─────────────────────────────────────────────
+\usepackage[a4paper, margin=2.6cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.18}
+\setlength{\parskip}{0.35em}
