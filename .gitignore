@@ -1,11 +1,6 @@
 # Generated book and chapter outputs
 /build/
 
-# Local Codex and worktree data
-/.codex-tmp/
-/.polly/
-/.worktrees/
-
 # Python cache and local virtual environments
 __pycache__/
 *.py[cod]
