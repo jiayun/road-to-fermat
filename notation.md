@@ -35,9 +35,15 @@
 | $\bar\rho$ | `\bar\rho` | 剩餘（mod $\ell$）Galois 表示 | 6.1 |
 | $a_p(E)$、$a_p(f)$ | — | 橢圓曲線／模形式的 $p$ 處係數 | 5.3 / 5.4 |
 | $X_0(N)$ | `X_0(N)` | 模曲線 | 5.6 |
+| $\Gamma_0(N)$ | `\Gamma_0(N)` | $\mathrm{SL}_2(\mathbb Z)$ 中左下角可被 $N$ 整除的同餘子群 | 5.5 |
+| $S_2(\Gamma_0(N))$ | `S_2(\Gamma_0(N))` | 權重 $2$、級 $N$ 的尖形式空間 | 5.6 |
+| $\rho_{E,\ell}$、$\bar\rho_{E,\ell}$ | — | 橢圓曲線 $E$ 的 $\ell$-進表示及其 mod $\ell$ 剩餘表示 | 6.2 |
+| $R$ | `R` | 滿足指定局部條件的 Galois 表示之泛變形環 | 7.3 |
+| $\mathbb{T}$ | `\mathbb{T}` | 對應模形式空間上的 Hecke 代數 | 7.4 |
 
 ## 慣例
 
 - 「質數」一律指正質數；$p$、$\ell$ 預設為質數，$\ell$ 用於表示的係數質數以與曲線所在的 $p$ 區隔（第六部起嚴格執行）。
 - 定理環境採 fenced div：`theorem`、`proposition`、`lemma`、`corollary`、`conjecture`、`definition`、`example`、`remark`、`proof`。
 - 證明結束符 $\blacksquare$ 由 amsthm 自動加上，內文不手寫。
+- 閱讀導覽中的 **[證]／[歸]／[構]／[黑]** 分別表示「本書完整證明／歸約至先前結果／結構性解釋／研究級黑箱」；它們描述結果的處理深度，不是數學記號，也不是整章的一次性評等。
