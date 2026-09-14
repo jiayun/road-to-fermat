@@ -1,6 +1,11 @@
 # Generated book and chapter outputs
 /build/
 
+# Local agent work directories
+/.codex-tmp/
+/.polly/
+/.worktrees/
+
 # Python cache and local virtual environments
 __pycache__/
 *.py[cod]
